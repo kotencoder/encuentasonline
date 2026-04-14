@@ -4,8 +4,8 @@
     --border-color: rgba(255, 255, 255, 0.1);
     --text-main: #f3f4f6;
     --text-muted: #9ca3af;
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
+    --primary: #d946ef;
+    --primary-hover: #c026d3;
     --secondary: #ec4899;
     --accent: #8b5cf6;
     --input-bg: rgba(15, 23, 42, 0.6);
@@ -159,7 +159,7 @@ input[type="text"]:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 0 0 3px rgba(217, 70, 239, 0.2);
 }
 
 input::placeholder,
@@ -214,7 +214,7 @@ textarea {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     border-color: transparent;
     color: white;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(217, 70, 239, 0.4);
     transform: scale(1.05);
     z-index: 10;
 }
