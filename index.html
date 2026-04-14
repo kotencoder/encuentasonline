@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta del Curso Antigravity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob shape-1"></div>
+        <div class="blob shape-2"></div>
+        <div class="blob shape-3"></div>
+    </div>
+
+    <main class="survey-container">
+        <header class="survey-header">
+            <h1>Encuesta de Feedback</h1>
+            <p>Queremos conocer tu opinión sobre el curso de Antigravity para seguir mejorando.</p>
+        </header>
+
+        <form id="surveyForm" class="survey-form">
+            <div class="form-group">
+                <label for="id_estudiante">ID del Estudiante</label>
+                <input type="text" id="id_estudiante" name="id_estudiante" placeholder="Ej: AG-2026-001" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nivel de Satisfacción general</label>
+                <p class="help-text">1: Muy insatisfecho - 5: Muy satisfecho</p>
+                <div class="rating-group" role="group" aria-labelledby="satisfaccion-label">
+                    <label class="rating-btn"><input type="radio" name="nivel_satisfaccion" value="1" required><span>1</span></label>
+                    <label class="rating-btn"><input type="radio" name="nivel_satisfaccion" value="2"><span>2</span></label>
+                    <label class="rating-btn"><input type="radio" name="nivel_satisfaccion" value="3"><span>3</span></label>
+                    <label class="rating-btn"><input type="radio" name="nivel_satisfaccion" value="4"><span>4</span></label>
+                    <label class="rating-btn"><input type="radio" name="nivel_satisfaccion" value="5"><span>5</span></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Claridad del Contenido</label>
+                <p class="help-text">1: Muy poco claro - 5: Muy claro</p>
+                <div class="rating-group">
+                    <label class="rating-btn"><input type="radio" name="claridad_contenido" value="1" required><span>1</span></label>
+                    <label class="rating-btn"><input type="radio" name="claridad_contenido" value="2"><span>2</span></label>
+                    <label class="rating-btn"><input type="radio" name="claridad_contenido" value="3"><span>3</span></label>
+                    <label class="rating-btn"><input type="radio" name="claridad_contenido" value="4"><span>4</span></label>
+                    <label class="rating-btn"><input type="radio" name="claridad_contenido" value="5"><span>5</span></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Aplicabilidad Práctica</label>
+                <p class="help-text">1: Nada aplicable - 5: Muy aplicable</p>
+                <div class="rating-group">
+                    <label class="rating-btn"><input type="radio" name="aplicabilidad_practica" value="1" required><span>1</span></label>
+                    <label class="rating-btn"><input type="radio" name="aplicabilidad_practica" value="2"><span>2</span></label>
+                    <label class="rating-btn"><input type="radio" name="aplicabilidad_practica" value="3"><span>3</span></label>
+                    <label class="rating-btn"><input type="radio" name="aplicabilidad_practica" value="4"><span>4</span></label>
+                    <label class="rating-btn"><input type="radio" name="aplicabilidad_practica" value="5"><span>5</span></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios_adicionales">Comentarios Adicionales</label>
+                <textarea id="comentarios_adicionales" name="comentarios_adicionales" rows="4" placeholder="¿Qué te gustó más? ¿Qué mejorarías?"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span>Enviar Respuestas</span>
+            </button>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+            <div class="success-icon">✓</div>
+            <h2>¡Gracias por tu participación!</h2>
+            <p>Tus respuestas han sido registradas exitosamente.</p>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

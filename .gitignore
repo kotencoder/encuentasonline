@@ -1,0 +1,10 @@
+# Credenciales y archivos de configuración sensibles
+config.js
+
+# Node / dependencias (por si acaso el proyecto se expande)
+node_modules/
+.env
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
